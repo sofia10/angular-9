@@ -9,3 +9,15 @@
         </div>
     </div>
 </div>
+
+<hr>
+
+<div class="container">
+    <h2>Assignment 2</h2>
+    <hr>
+    <label> Username </label>
+    <input type="text" class="form-control" [(ngModel)] = 'username'>
+    <p>{{username}}</p>
+
+    <button class="btn btn-primary" [disabled] = "username === ''" (click)="username = ''"> Reset User </button>
+</div>
